@@ -1,0 +1,21 @@
+h1{
+    font-size: 5em;
+    color:firebrick;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    text-align: center ;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 3em;
+    height: 3em;
+    font-size: 2em;
+    padding: 0;
+    font-weight: bold;
+}
