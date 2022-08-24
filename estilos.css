@@ -4,7 +4,7 @@
 h1{
     font-size: 5em;
     color:firebrick;
-    background-color: rgb(78, 70, 69);
+    background-color: rgb(243, 90, 70);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
     text-align: center ;
@@ -30,8 +30,8 @@ input{
    margin: 30px;
 }
 footer{
-    background-color: rgb(78, 70, 69);
-    color:firebrick;
+    background-color: firebrick;
+    color:black;
     padding:50px;
     font-weight: bold;
 }
