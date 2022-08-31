@@ -10,7 +10,8 @@ function sortNumeros(){
         i=i-1;
     }
     }
-    console.log(numSort)
+    document.getElementById("sorteados").innerHTML = numSort;
+    contarAcertos()
 }
 function lerNumero(value,pos){
 if(value < 1){
@@ -23,4 +24,14 @@ if(value < 1){
     numEsc[pos]=value
 console.log(numEsc)
 }
+}
+
+function contarAcertos(){
+    let cont = 0
+    numEsc.forEach(function(value, index){
+        if(numSort.includes(value)){
+            cont++;
+        }
+    })
+document.getElementById("acertos").innerHTML = cont;
 }
