@@ -10,17 +10,31 @@ function sortNumeros(){
         i=i-1;
     }
     }
-    console.log(numSort)
+    document.getElementById("sorteados").innerHTML = numSort;
+    contarAcertos()
 }
 function lerNumero(value,pos){
-if(value < 1){
+
+let num = Number(value)
+
+if(num < 1){
     alert("Numero não pode ser 0 ou negativo seu otário! Digita essa coisa certa irmão!!!!")
-} else if(value > 60){
+} else if(num > 60){
     alert("Numeros não podem ser maiores que 60, tu é burro ou oque???")
-}else if(numEsc.includes(value)){
+}else if(numEsc.includes(num)){
     alert("Cara... tu é muito burro, o numero tá repetido! Arruma isso ae!!!")
 }else{
-    numEsc[pos]=value
+    numEsc[pos]=num
 console.log(numEsc)
 }
+}
+
+function contarAcertos(){
+    let cont = 0
+    numEsc.forEach(function(value, index){
+        if(numSort.includes(value)){
+            cont++;
+        }
+    })
+document.getElementById("acertos").innerHTML = cont;
 }
